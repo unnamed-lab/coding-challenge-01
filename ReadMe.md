@@ -49,7 +49,8 @@ const ageCalc = function (day, month, year) {
   yearDiff = currentYear - Number(year); //  Get the user age in Years
   monthDiff = currentMonth - Number(month); //  Get the difference in the months
   if (monthDiff < 0) {
-    //  If the difference produces a negative value, a year will be remove from the year difference and the month difference will be 12 minus the current month index
+    //  If the difference produces a negative value, a year will be remove from the year difference 
+    //  and the month difference will be 12 minus the current month index
     yearDiff--;
     monthDiff = 12 - currentMonth;
   }
@@ -111,5 +112,11 @@ const setDateParameters = function (
 };
 ```
 
+**The CSS file** ```.\css\style.css```.
 
-*Incase any potential errors, feel free to reach out to me on [Twitter](https://twitter.com/unnamed_labs)*
+
+**The Design files** ```.\design```.
+
+### _Credits to Frontend Mentor for the challenge - [Challenge](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q)_
+
+*Incase of any potential errors, feel free to reach out to me on [Twitter](https://twitter.com/unnamed_labs) :)*
