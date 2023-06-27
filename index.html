@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Age Calculator - Unnamed</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        HTML Blueprint:
+        Container >
+            Input Section > Form
+            Result Display > Text
+     -->
+
+    <main class="app-container">
+        <!-- The Form Input Section -->
+        <div class="calc-form">
+            <div class="form-container">
+                <label for="birthDay" class="day-label label">Day</label>
+                <input id="birthDay" type="number" class="form-input" placeholder="01" min="1">
+                <span class="error-label hidden" id="day-error">Must be a valid day</span>
+            </div>
+            <div class="form-container" >
+                <label for="birthMonth" class="month-label label">Month</label>
+                <input id="birthMonth" type="number" class="form-input" placeholder="01" min="1" max="12">
+                <span class="error-label hidden" id="month-error">Must be a valid month</span>
+            </div>
+            <div class="form-container">
+                <label for="birthYear" class="year-label label">Year</label>
+                <input id="birthYear" type="number" class="form-input" placeholder="1990" min="1700" >
+                <span class="error-label hidden" id="year-error">Must be in the past</span>
+            </div>
+            <button class="calc-btn">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <line fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="16" y1="26" x2="16" y2="4"></line> <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="24.5,18 16,26.5 7.5,18 "></polyline> </g>
+                </svg>
+            </button>
+        </div>
+
+        <!-- The Result Presentation -->
+        <div class="calc-result">
+            <!-- Result for the year difference -->
+            <div class="result-value">
+                <span id="yearValue" class="value">--</span> years
+            </div>
+            <!-- Result for the month difference -->
+            <div class="result-value">
+                <span id="monthValue" class="value">--</span> months
+            </div>
+            <!-- Result for the day difference -->
+            <div class="result-value">
+                <span id="dayValue" class="value">--</span> days
+            </div>
+        </div>
+     </main>
+     <script src="js/script.js"></script>
+</body>
+</html>
